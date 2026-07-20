@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Brayan Andrés Castillo Mesa — CV / Portfolio</title>
+
+  <meta
+    name="description"
+    content="CV web de Brayan Andrés Castillo Mesa, aprendiz SENA en Análisis y Desarrollo de Software, desarrollador full-stack junior enfocado en proyectos web, experiencias interactivas y soluciones digitales."
+  />
+
+  <meta property="og:title" content="Brayan Andrés Castillo Mesa — CV / Portfolio" />
+  <meta property="og:description" content="Software Developer CV focused on client work, selected projects, skills, experience and certificates." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cv.blackars.com" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Brayan Andrés Castillo Mesa",
+    "alternateName": "Blackars",
+    "url": "https://blackars.com",
+    "email": "mailto:castillo.brayan@correounivalle.edu.co",
+    "jobTitle": "Software Developer / SENA ADSO Apprentice",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bogotá D.C.",
+      "addressCountry": "CO"
+    },
+    "knowsAbout": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Python",
+      "MySQL",
+      "SQLite",
+      "Three.js",
+      "Astro",
+      "Git",
+      "UI Development",
+      "Creative Coding",
+      "Web Development"
+    ],
+    "sameAs": [
+      "https://blackars.com",
+      "https://www.linkedin.com/in/blackars",
+      "https://github.com/blackars"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- Utility -->
+    <div class="utility-bar" aria-label="Utility navigation">
+      <div class="utility-left">
+      </div>
+
+      <div class="utility-right">
+        <button class="print-button" type="button" onclick="window.print()" data-es="Guardar PDF" data-en="Save PDF">
+          Guardar PDF
+        </button>
+
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+          Modo oscuro
+        </button>
+
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Toggle language">
+          EN
+        </button>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="hero">
+      <div class="hero-copy">
+        <h1 class="hero-title">Brayan Andrés Castillo Mesa</h1>
+
+        <p class="role-line" data-es="Desarrollador de Software · Full-stack Junior · Tecnólogo Creativo" data-en="Software Developer · Full-stack Junior · Creative Technologist">
+          Desarrollador de Software · Full-stack Junior · Tecnólogo Creativo
+        </p>
+
+        <p class="availability-line" data-es="Bogotá D.C. / Remoto Colombia · Disponible para pasantía SENA, prácticas o roles junior de software" data-en="Bogota D.C. / Remote Colombia · Available for SENA apprenticeship, internship or junior software roles">
+          Bogotá D.C. / Remoto Colombia · Disponible para pasantía SENA, prácticas o roles junior de software
+        </p>
+
+        <p class="intro" data-es="Construyo aplicaciones web, experiencias digitales interactivas y herramientas internas con enfoque en claridad, funcionalidad y precisión visual. Mi trabajo conecta desarrollo de software, interfaces mínimas, codificación creativa y resolución práctica de problemas." data-en="I build web applications, interactive digital experiences and internal tools with a focus on clarity, functionality and visual precision. My work connects software development, minimal interfaces, creative coding and practical problem solving.">
+          Construyo aplicaciones web, experiencias digitales interactivas y herramientas internas con enfoque en claridad, funcionalidad y precisión visual. Mi trabajo conecta desarrollo de software, interfaces mínimas, codificación creativa y resolución práctica de problemas.
+        </p>
+
+        <div class="hero-meta">
+          <nav class="link-stack" aria-label="Profile links">
+            <a href="https://www.blackars.com" target="_blank" rel="noreferrer">https://www.blackars.com</a>
+            <a href="https://www.linkedin.com/in/blackars" target="_blank" rel="noreferrer">https://www.linkedin.com/in/blackars</a>
+            <a href="https://github.com/blackars" target="_blank" rel="noreferrer">https://github.com/blackars</a>
+            <a href="mailto:castillo.brayan@correounivalle.edu.co">castillo.brayan@correounivalle.edu.co</a>
+          </nav>
+
+          <a class="download-link" href="/Brayan-Andres-Castillo-Mesa-CV.pdf" download data-es="Descargar PDF aquí" data-en="Download a PDF Here">
+            Descargar PDF aquí
+          </a>
+        </div>
+
+        <div class="quick-facts" aria-label="Resumen profesional">
+          <span class="fact">SENA ADSO</span>
+          <span class="fact">Frontend</span>
+          <span class="fact" data-es="Backend básico" data-en="Backend basics">Backend básico</span>
+          <span class="fact">JavaScript</span>
+          <span class="fact">React</span>
+          <span class="fact">Node.js</span>
+          <span class="fact">Python</span>
+          <span class="fact">MySQL</span>
+          <span class="fact">Three.js</span>
+          <span class="fact">Git / GitHub</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="section-tabs" aria-label="CV sections">
+      <div class="tabs-inner" role="tablist">
+        <button
+          class="tab-button"
+          type="button"
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-projects"
+          id="tab-projects"
+          data-tab="projects">
+          Proyectos
+        </button>
+
+        <button
+          class="tab-button"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-experience"
+          id="tab-experience"
+          data-tab="experience">
+          Experiencia
+        </button>
+
+        <button
+          class="tab-button"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-certificates"
+          id="tab-certificates"
+          data-tab="certificates">
+          Certificados
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ======================================================
+           PROJECTS
+           ====================================================== -->
+      <section
+        class="panel is-active"
+        id="panel-projects"
+        role="tabpanel"
+        aria-labelledby="tab-projects"
+        data-panel="projects">
+
+        <!-- Client Work -->
+        <div class="group" id="client-work">
+          <div class="section-kicker" data-es="Trabajo comercial / entregado" data-en="Commercial / delivered work">Trabajo comercial / entregado</div>
+          <h2 class="section-heading" data-es="Proyectos de Clientes (4)" data-en="Client Work (4)">Proyectos de Clientes (4)</h2>
+          <p class="section-intro" data-es="Proyectos creados para clientes o casos de uso externos." 
+          data-en="Projects created for clients or external use cases.">
+            Proyectos creados para clientes o casos de uso externos. 
+          </p>
+
+          <div class="project-list">
+            <!-- Client Project 01 -->
+            <article class="project-card">
+              <div class="media-frame">
+                <video muted loop playsinline preload="none" poster="">
+                  <source data-src="/media/client-01.webm" type="video/webm" />
+                </video>
+                <div class="media-placeholder">
+                  <span>
+                    <strong>WEBM SLOT</strong>
+                    Client project 01 loop preview
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="project-title">Client Portal 01</h3>
+
+                <div class="project-meta">
+                  <span class="tag">Client Work</span>
+                  <span class="tag">Frontend</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Responsive UI</span>
+                </div>
+
+                <p class="project-description">
+                  Placeholder description for a client-facing website or application. Explain the client's need,
+                  the solution you built and why the interface improves communication, conversion or internal workflow.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><strong>Role:</strong> UI development, structure, responsive layout and deployment support.</li>
+                  <li><strong>Problem:</strong> The client needed a clear, fast and maintainable digital presence.</li>
+                  <li><strong>Result:</strong> Delivered a web experience prepared for public presentation and future updates.</li>
+                </ul>
+
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noreferrer">Live Site</a>
+                  <a href="#" target="_blank" rel="noreferrer">Case Notes</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Client Project 02 -->
+            <article class="project-card">
+              <div class="media-frame">
+                <video muted loop playsinline preload="none" poster="">
+                  <source data-src="/media/client-02.webm" type="video/webm" />
+                </video>
+                <div class="media-placeholder">
+                  <span>
+                    <strong>WEBM SLOT</strong>
+                    Client project 02 loop preview
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="project-title">Business Landing System</h3>
+
+                <div class="project-meta">
+                  <span class="tag">Client Work</span>
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">SEO Basics</span>
+                </div>
+
+                <p class="project-description">
+                  Placeholder for a landing page or campaign site. Mention content hierarchy, call-to-action strategy,
+                  accessibility improvements and how the design adapts to mobile screens.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><strong>Role:</strong> Layout, visual system, semantic HTML and performance improvements.</li>
+                  <li><strong>Problem:</strong> Information was fragmented and difficult to scan.</li>
+                  <li><strong>Result:</strong> Created a direct page structure focused on clarity and conversion.</li>
+                </ul>
+
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noreferrer">Live Site</a>
+                  <a href="#" target="_blank" rel="noreferrer">Case Notes</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Client Project 03 -->
+            <article class="project-card">
+              <div class="media-frame">
+                <video muted loop playsinline preload="none" poster="">
+                  <source data-src="/media/client-03.webm" type="video/webm" />
+                </video>
+                <div class="media-placeholder">
+                  <span>
+                    <strong>WEBM SLOT</strong>
+                    Client project 03 loop preview
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="project-title">Internal Dashboard</h3>
+
+                <div class="project-meta">
+                  <span class="tag">Client Work</span>
+                  <span class="tag">Dashboard</span>
+                  <span class="tag">Data</span>
+                  <span class="tag">Power BI / JS</span>
+                </div>
+
+                <p class="project-description">
+                  Placeholder for an internal dashboard or reporting tool. Explain what data was organized,
+                  which indicators were displayed and how the interface helped decision-making.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><strong>Role:</strong> Data organization, visual structure and report interaction design.</li>
+                  <li><strong>Problem:</strong> Operational information needed to be centralized and easier to read.</li>
+                  <li><strong>Result:</strong> Delivered a dashboard-like structure for faster monitoring.</li>
+                </ul>
+
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noreferrer">Live / Demo</a>
+                  <a href="#" target="_blank" rel="noreferrer">Case Notes</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Client Project 04 -->
+            <article class="project-card">
+              <div class="media-frame">
+                <video muted loop playsinline preload="none" poster="">
+                  <source data-src="/media/client-04.webm" type="video/webm" />
+                </video>
+                <div class="media-placeholder">
+                  <span>
+                    <strong>WEBM SLOT</strong>
+                    Client project 04 loop preview
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="project-title">Brand Website Module</h3>
+
+                <div class="project-meta">
+                  <span class="tag">Client Work</span>
+                  <span class="tag">Website</span>
+                  <span class="tag">UI</span>
+                  <span class="tag">CMS-ready</span>
+                </div>
+
+                <p class="project-description">
+                  Placeholder for a modular website built for a brand, studio or independent business.
+                  Explain reusable sections, information architecture and visual consistency.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><strong>Role:</strong> Visual implementation, component structure and content organization.</li>
+                  <li><strong>Problem:</strong> The client needed a flexible website that could grow over time.</li>
+                  <li><strong>Result:</strong> Built a reusable section-based layout for future expansion.</li>
+                </ul>
+
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noreferrer">Live Site</a>
+                  <a href="#" target="_blank" rel="noreferrer">Case Notes</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Selected Works -->
+        <div class="group" id="selected-works">
+          <div class="section-kicker" data-es="Investigación personal / exploración técnica" data-en="Personal research / technical exploration">Investigación personal / exploración técnica</div>
+          <h2 class="section-heading" data-es="Proyectos Seleccionados (6)" data-en="Selected Works (6)">Proyectos Seleccionados (6)</h2>
+          <p class="section-intro" data-es="Proyectos personales utilizados para explorar arquitectura de software, codificación creativa, bases de datos, sistemas visuales, narrativa interactiva y flujos de trabajo asistidos por IA." data-en="Personal projects used to explore software architecture, creative coding, databases, visual systems, interactive storytelling and AI-assisted workflows.">
+            Proyectos personales utilizados para explorar arquitectura de software, codificación creativa, bases de datos, sistemas visuales, narrativa interactiva y flujos de trabajo asistidos por IA.
+          </p>
+
+          <div class="project-list">
+            <!-- Selected 01 -->
+            <article class="project-card">
+              <div class="media-frame">
+                <video muted loop playsinline preload="none" poster="">
+                  <source data-src="media/minibase.webm" type="video/webm" />
+                </video>
+              </div>
+
+              <div>
+                <h3 class="project-title">MiniBase v1.0</h3>
+
+                <div class="project-meta">
+                  <span class="tag">Personal Project</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">SQLite</span>
+                  <span class="tag">Data Management</span>
+                </div>
+
+                <p class="project-description">
+                  A miniature collection management tool designed to organize visual assets, metadata and lore.
+                  The project explores how structured databases can support creative collections and future AI/RPG integrations.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><strong>Role:</strong> Full implementation, database structure and interface design.</li>
+                  <li><strong>Focus:</strong> CRUD logic, asset organization, local data persistence and modular expansion.</li>
+                  <li><strong>Next step:</strong> AI-assisted lore generation and import/export workflows.</li>
+                </ul>
+
+                <div class="project-links">
+                  <a href="https://www.youtube.com/watch?v=I0YrxdIRhjs" target="_blank" rel="noreferrer">Demo</a>
+                  <a href="https://github.com/blackars/MiniBase" target="_blank" rel="noreferrer">Repository</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Selected 02 -->
+            <article class="project-card">
+              <div class="media-frame">
+                <video muted loop playsinline preload="none" poster="">
+                  <source data-src="/media/momo-time-huntress.webm" type="video/webm" />
+                </video>
+                <div class="media-placeholder">
+                  <span>
+                    <strong>WEBM SLOT</strong>
+                    Momo: Time-Huntress preview
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="project-title is-readable">Momo: Time-Huntress</h3>
+
+                <div class="project-meta">
+                  <span class="tag">Personal Project</span>
+                  <span class="tag">Ren'Py</span>
+                  <span class="tag">Narrative Design</span>
+                  <span class="tag">Interactive Fiction</span>
+                </div>
+
+                <p class="project-description">
+                  An interactive visual novel that combines science fiction, dark fantasy and branching narrative logic.
+                  It demonstrates interface scripting, visual composition and interactive storytelling.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><strong>Role:</strong> Narrative structure, implementation, visual direction and interaction flow.</li>
+                  <li><strong>Focus:</strong> Scene logic, dialogue systems, audiovisual pacing and user progression.</li>
+                  <li><strong>Result:</strong> A playable narrative prototype with a defined visual identity.</li>
+                </ul>
+
+                <div class="project-links">
+                  <a href="https://blackars.itch.io/momo-time-huntress" target="_blank" rel="noreferrer">Play / Preview</a>
+                  <a href="https://github.com/blackars/momo-time-huntress" target="_blank" rel="noreferrer">Project Notes</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Selected 03 -->
+            <article class="project-card">
+              <div class="media-frame">
+                <video muted loop playsinline preload="none" poster="https://res.cloudinary.com/dgff8o52c/image/upload/NOXISTENCE-Landingpaage_g5dp1o.webp">
+                  <source data-src="https://res.cloudinary.com/dgff8o52c/image/upload/NOXISTENCE-Landingpaage_g5dp1o.webp" type="image/webp" />
+                </video>
+              </div>
+
+              <div>
+                <h3 class="project-title">NOXISTENCE Website</h3>
+
+                <div class="project-meta">
+                  <span class="tag">Personal Project</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Vite</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">Cloudinary</span>
+                </div>
+
+                <p class="project-description">
+                  A modular web platform created as a central infrastructure for a fictional universe.
+                  The project combines content management, media handling, interactive presentation and scalable deployment ideas.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><strong>Role:</strong> Architecture, frontend implementation and content system planning.</li>
+                  <li><strong>Focus:</strong> Modular pages, multimedia assets, cloud media workflows and visual identity.</li>
+                  <li><strong>Technical angle:</strong> Prepared for future modules, authentication and deployment improvements.</li>
+                </ul>
+
+                <div class="project-links">
+                  <a href="https://noxistence.com/" target="_blank" rel="noreferrer">Live Site</a>
+                  <a href="https://github.com/blackars/NOXISTENCE-site" target="_blank" rel="noreferrer">Repository</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Selected 04 -->
+            <article class="project-card">
+              <div class="media-frame">
+                <img src="media/portalsgarden.webp" alt="Portals Garden 3D experience" loading="lazy" />
+              </div>
+
+              <div>
+                <h3 class="project-title">Portals Garden</h3>
+
+                <div class="project-meta">
+                  <span class="tag">Personal Project</span>
+                  <span class="tag">Three.js</span>
+                  <span class="tag">TensorFlow.js</span>
+                  <span class="tag">3D Web</span>
+                </div>
+
+                <p class="project-description">
+                  A 3D web experience designed as an interactive gateway into the NOXISTENCE universe.
+                  It explores spatial navigation, visual interaction and browser-based immersive experiences.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><strong>Role:</strong> Creative coding, 3D interaction design and technical implementation.</li>
+                  <li><strong>Focus:</strong> WebGL scenes, navigation, interactive portals and experimental modules.</li>
+                  <li><strong>Result:</strong> A visual prototype connecting storytelling, interaction and real-time graphics.</li>
+                </ul>
+
+                <div class="project-links">
+                  <a href="https://portalsgarden.netlify.app/" target="_blank" rel="noreferrer">Live Experience</a>
+                  <a href="https://github.com/blackars/NOXISTENCE-PortalsGarden" target="_blank" rel="noreferrer">Repository</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Selected 05 -->
+            <article class="project-card">
+              <div class="media-frame">
+                <video muted loop playsinline preload="none" poster="">
+                  <source data-src="/media/artificial-mind.webm" type="video/webm" />
+                </video>
+                <div class="media-placeholder">
+                  <span>
+                    <strong>WEBM SLOT</strong>
+                    Artificial Mind installation preview
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="project-title">Artificial Mind</h3>
+
+                <div class="project-meta">
+                  <span class="tag">Research</span>
+                  <span class="tag">AI + Art</span>
+                  <span class="tag">Installation</span>
+                  <span class="tag">New Media</span>
+                </div>
+
+                <p class="project-description">
+                  A research-based installation exploring the relationship between artificial intelligence,
+                  digital aesthetics and artistic creation. It connects technical experimentation with visual arts research.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><strong>Role:</strong> Concept development, visual system and digital experimentation.</li>
+                  <li><strong>Focus:</strong> AI as creative medium, installation logic and audiovisual composition.</li>
+                  <li><strong>Context:</strong> Developed within an academic/research-oriented artistic process.</li>
+                </ul>
+
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noreferrer">Project Page</a>
+                  <a href="#" target="_blank" rel="noreferrer">Documentation</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Selected 06 -->
+            <article class="project-card">
+              <div class="media-frame">
+                <video muted loop playsinline preload="none" poster="">
+                  <source data-src="/media/experimental-toolkit.webm" type="video/webm" />
+                </video>
+                <div class="media-placeholder">
+                  <span>
+                    <strong>WEBM SLOT</strong>
+                    Experimental toolkit preview
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="project-title">Experimental Toolkit</h3>
+
+                <div class="project-meta">
+                  <span class="tag">Personal Project</span>
+                  <span class="tag">Astro</span>
+                  <span class="tag">React</span>
+                  <span class="tag">Components</span>
+                </div>
+
+                <p class="project-description">
+                  Placeholder for your sixth personal project. Use this space for a tool, website, component library,
+                  automation workflow or prototype that demonstrates your ability to structure reusable code.
+                </p>
+
+                <ul class="project-bullets">
+                  <li><strong>Role:</strong> Frontend structure, components and visual system.</li>
+                  <li><strong>Focus:</strong> Reusability, performance, documentation and interface consistency.</li>
+                  <li><strong>Result:</strong> A technical base that can be reused in future web projects.</li>
+                </ul>
+
+                <div class="project-links">
+                  <a href="#" target="_blank" rel="noreferrer">Demo</a>
+                  <a href="#" target="_blank" rel="noreferrer">Repository</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           EXPERIENCE
+           ====================================================== -->
+      <section
+        class="panel"
+        id="panel-experience"
+        role="tabpanel"
+        aria-labelledby="tab-experience"
+        data-panel="experience">
+
+        <div class="section-kicker" data-es="Trabajo, práctica y aprendizaje aplicado" data-en="Work, practice and applied learning">Trabajo, práctica y aprendizaje aplicado</div>
+        <h2 class="section-heading" data-es="Experiencia" data-en="Experience">Experiencia</h2>
+        <p class="section-intro" data-es="Mi experiencia viene de construir cosas reales: proyectos propios, clientes freelance y formación continua. Cada reto fue una oportunidad para aprender rápido y aplicar directo." 
+        data-en="My experience comes from building real things: personal projects, freelance clients and continuous learning. Every challenge was an opportunity to learn fast and apply directly.">
+          Mi experiencia viene de construir cosas reales: proyectos propios, clientes freelance y formación continua. Cada reto fue una oportunidad para aprender rápido y aplicar directo. 
+        </p>
+
+        <div class="timeline">
+          <article class="experience-item">
+            <div class="experience-date">2025 — Present</div>
+            <div>
+              <h3 class="experience-title" data-es="Experto en Hosting, Ventas y Soporte" data-en="Hosting Experts, Sales and Support">Experto en Hosting, Ventas y Soporte</h3>
+              <p class="experience-org" data-es="GoDaddy · Onsite" data-en="GoDaddy · Onsite">GoDaddy · Onsite </p>
+              <p class="experience-body" data-es="Brindé soporte técnico, orientación en ventas y soluciones de hosting para clientes pequeños. Asistí a clientes con gestión de dominios, configuración de sitios web, configuración de hosting y recomendaciones de productos durante 8 meses de experiencia directa con clientes." 
+              data-en="Provided technical support, sales guidance and hosting solutions for small business customers. Assisted clients with domain management, website setup, hosting configuration and product recommendations over 8 months of customer-facing experience.">
+                Brindé soporte técnico, orientación en ventas y soluciones de hosting para clientes pequeños. Asistí a clientes con gestión de dominios, configuración de sitios web, configuración de hosting y recomendaciones de productos durante 8 meses de experiencia directa con clientes.
+              </p>
+              <div class="project-meta">
+                <span class="tag" data-es="Soporte Técnico" data-en="Technical Support">Soporte Técnico</span>
+                <span class="tag" data-es="Ventas" data-en="Sales">Ventas</span>
+                <span class="tag">Hosting</span>                
+                <span class="tag">CPanel</span>
+                <span class="tag">WordPress</span>
+                <span class="tag">VPS</span>
+                <span class="tag" data-es="Servicio al Cliente" data-en="Customer Service">Servicio al Cliente</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-date">2026 — Present</div>
+            <div>
+              <h3 class="experience-title" data-es="Aprendiz de Desarrollo de Software" data-en="Software Development Trainee">Aprendiz de Desarrollo de Software</h3>
+              <p class="experience-org" data-es="SENA · Análisis y Desarrollo de Software" data-en="SENA · Software Analysis and Development">SENA · Análisis y Desarrollo de Software</p>
+              <p class="experience-body" data-es="Pasantía o etapa productiva en análisis y desarrollo de software. Desarrollo frontend, soporte backend, QA, gestión de bases de datos, documentación y colaboración ágil." 
+              data-en="Placeholder for your productive stage or apprenticeship profile. Describe the type of role you are seeking or the tasks you are currently performing: frontend development, backend support, QA, database management, documentation and agile collaboration.">
+                Pasantía o etapa productiva en análisis y desarrollo de software. Desarrollo frontend, soporte backend, QA, gestión de bases de datos, documentación y colaboración ágil.
+              </p>
+              <div class="project-meta">
+                <span class="tag">ADSO</span>
+                <span class="tag" data-es="Análisis de Software" data-en="Software Analysis">Análisis de Software</span>
+                <span class="tag" data-es="Desarrollo Web" data-en="Web Development">Desarrollo Web</span>
+                <span class="tag" data-es="Bases de Datos" data-en="Databases">Bases de Datos</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-date">2023 — Present</div>
+            <div>
+              <h3 class="experience-title" data-es="Desarrollador Web Freelance" data-en="Freelance Web Developer">Desarrollador Web Freelance</h3>
+              <p class="experience-org" data-es="Trabajo independiente con clientes · Bogotá / Remoto" 
+              data-en="Independent client work · Bogota / Remote">Trabajo independiente con clientes · Bogotá / Remoto</p>
+              <p class="experience-body" data-es="Proyectos para clientes: sitios web, landing pages, herramientas internas, dashboards, estructuras de contenido, despliegues y mejoras de interfaz." 
+              data-en="Placeholder for your four client projects. Mention the type of clients, deliverables and technologies. Example: websites, landing pages, internal tools, dashboards, content structures, deployments and interface improvements.">
+                Proyectos para clientes: sitios web, landing pages, herramientas internas, dashboards, estructuras de contenido, despliegues y mejoras de interfaz.
+              </p>
+              <div class="project-meta">
+                <span class="tag" data-es="Comunicación con Clientes" data-en="Client Communication">Comunicación con Clientes</span>
+                <span class="tag">HTML / CSS / JS</span>
+                <span class="tag">Frameworks</span>
+                <span class="tag" data-es="Diseño Responsivo" data-en="Responsive Design">Diseño Responsivo</span>
+                <span class="tag" data-es="AI Workflows" data-en="Delivery">AI Workflows</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </section>
+
+      <!-- ======================================================
+           CERTIFICATES
+           ====================================================== -->
+      <section
+        class="panel"
+        id="panel-certificates"
+        role="tabpanel"
+        aria-labelledby="tab-certificates"
+        data-panel="certificates">
+
+        <div class="section-kicker" data-es="Habilidades, educación y certificados" data-en="Skills, education and certificates">Habilidades, educación y certificados</div>
+        <h2 class="section-heading" data-es="Certificados" data-en="Certificates">Certificados</h2>
+
+
+        <div class="skills-grid" aria-label="Skills">
+          <div class="skill-block">
+            <h3 data-es="Frontend" data-en="Frontend">Frontend</h3>
+            <p data-es="HTML, CSS, JavaScript, React, Astro, interfaces responsivas, fundamentos de accesibilidad y estructura de UI." data-en="HTML, CSS, JavaScript, React, Astro, responsive interfaces, accessibility basics and UI structure.">HTML, CSS, JavaScript, React, Astro, interfaces responsivas, fundamentos de accesibilidad y estructura de UI.</p>
+          </div>
+
+          <div class="skill-block">
+            <h3 data-es="Backend" data-en="Backend">Backend</h3>
+            <p data-es="Fundamentos de Node.js, Python, MySQL, SQLite, lógica CRUD, manejo de datos y fundamentos de API." 
+            data-en="Node.js basics, Python, MySQL, SQLite, CRUD logic, data handling and API fundamentals.">
+            Fundamentos de Node.js, Python, MySQL, SQLite, lógica CRUD, manejo de datos y fundamentos de API.</p>
+          </div>
+
+          <div class="skill-block">
+            <h3 data-es="Tecnología Creativa" data-en="Creative Tech">Tecnología Creativa</h3>
+            <p data-es="Three.js, TouchDesigner, Unity, Blender, sistemas interactivos, UX, interfaces audiovisuales y prototipado." 
+            data-en="Three.js, TouchDesigner, Unity, Blender, UX, interactive systems, audiovisual interfaces and prototyping.">
+            Three.js, TouchDesigner, Unity, Blender, sistemas interactivos, UX, interfaces audiovisuales y prototipado.</p>
+          </div>
+
+          <div class="skill-block">
+            <h3 data-es="Datos / Herramientas" data-en="Data / Tools">Datos / Herramientas</h3>
+            <p data-es="Power BI, Tableau, Excel, Notion, Git, GitHub, fundamentos de Linux, documentación y organización de proyectos." 
+            data-en="Power BI, Tableau, Excel, Notion, Git, GitHub, Linux basics, documentation and project organization.">
+            Power BI, Tableau, Excel, Notion, Git, GitHub, fundamentos de Linux, documentación y organización de proyectos.</p>
+          </div>
+        </div>
+
+        
+
+        <div class="diploma-grid">
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Univalle-LicArtesVisuales-2024.webp" alt="Univalle Licenciatura" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Licenciatura en Artes Visuales — Investigación-Creación y Nuevos Medios" data-en="Bachelor's in Visual Arts — Research-Creation and New Media">Licenciatura en Artes Visuales — Investigación-Creación y Nuevos Medios</h3>
+              <p class="diploma-org">Universidad del Valle · 2024</p>
+            </div>
+          </div>
+
+          <div class="diploma-card coming-soon">
+            <div class="diploma-icon-placeholder">📄</div>
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Tecnólogo en Análisis y Desarrollo de Software" data-en="Technologist in Software Analysis and Development">Tecnólogo en Análisis y Desarrollo de Software</h3>
+              <p class="diploma-org">Servicio Nacional de Aprendizaje SENA · 2026</p>
+              <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/LinkedIn-CertificadoDeFinalizacion_Introduccion a las habilidades profesionales en analisis de datos 2025.webp" alt="LinkedIn Certificate" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Introducción a las Habilidades Profesionales en Análisis de Datos" data-en="Introduction to Professional Skills in Data Analysis">Introducción a las Habilidades Profesionales en Análisis de Datos</h3>
+              <p class="diploma-org">LinkedIn / Microsoft</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Oracle Certified Foundations Associate 2025.webp" alt="Oracle Certificate" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Oracle Certified Foundations Associate" data-en="Oracle Certified Foundations Associate">Oracle Certified Foundations Associate</h3>
+              <p class="diploma-org">Oracle</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Platzi-diploma-business-intelligence 2025.webp" alt="Platzi BI" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Business Intelligence" data-en="Business Intelligence">Business Intelligence</h3>
+              <p class="diploma-org">Platzi</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Platzi-diploma-etica-ia 2025.webp" alt="Platzi Ethics IA" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Ética en IA" data-en="AI Ethics">Ética en IA</h3>
+              <p class="diploma-org">Platzi</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Platzi-diploma-fundamentos-db 2025.webp" alt="Platzi DB" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Fundamentos de Bases de Datos" data-en="Database Fundamentals">Fundamentos de Bases de Datos</h3>
+              <p class="diploma-org">Platzi</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Platzi-diploma-tableau 2025.webp" alt="Platzi Tableau" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Tableau" data-en="Tableau">Tableau</h3>
+              <p class="diploma-org">Platzi</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Platzi-diploma-visualizacion-datos-bi 2025.webp" alt="Platzi Data Viz" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Visualización de Datos para BI" data-en="Data Visualization for BI">Visualización de Datos para BI</h3>
+              <p class="diploma-org">Platzi</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Platzi-diploma-aprender-data-ia 2024.webp" alt="Platzi Data IA" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Aprender Data e IA" data-en="Learn Data and AI">Aprender Data e IA</h3>
+              <p class="diploma-org">Platzi</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Platzi-diploma-excel-intro 2024.webp" alt="Platzi Excel" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Excel Intro" data-en="Excel Intro">Excel Intro</h3>
+              <p class="diploma-org">Platzi</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Platzi-diploma-fundamentos-matematicas 2024.webp" alt="Platzi Math" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Fundamentos de Matemáticas" data-en="Mathematics Fundamentals">Fundamentos de Matemáticas</h3>
+              <p class="diploma-org">Platzi</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Platzi-diploma-jupyter-notebook 2024.webp" alt="Platzi Jupyter" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Jupyter Notebook" data-en="Jupyter Notebook">Jupyter Notebook</h3>
+              <p class="diploma-org">Platzi</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Platzi-diploma-negocio-dropshipping 2024.webp" alt="Platzi Dropshipping" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Negocio de Dropshipping" data-en="Dropshipping Business">Negocio de Dropshipping</h3>
+              <p class="diploma-org">Platzi</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Platzi-diploma-negocios-data-science 2024.webp" alt="Platzi Data Science" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Negocios y Data Science" data-en="Business and Data Science">Negocios y Data Science</h3>
+              <p class="diploma-org">Platzi</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/Platzi-diploma-terminal 2024.webp" alt="Platzi Terminal" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Terminal y Línea de Comandos" data-en="Terminal and Command Line">Terminal y Línea de Comandos</h3>
+              <p class="diploma-org">Platzi</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/ugame_studio FUNDAMENTOS EN LA INDUSTRIA DEL DESARROLLO DE VIDEOJUEGOS 2022.webp" alt="Ugame Studio" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Fundamentos en la Industria del Desarrollo de Videojuegos" data-en="Fundamentals in the Game Development Industry">Fundamentos en la Industria del Desarrollo de Videojuegos</h3>
+              <p class="diploma-org">Ugame Studio</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/SENA-SOLUCION DE PROBLEMAS CON LA METODOLOGIA ALGORITMICA USANDO LENGUAJE PYTHON 2021.webp" alt="SENA Python" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Solución de Problemas con Metodología Algorítmica usando Python" data-en="Problem Solving with Algorithmic Methodology using Python">Solución de Problemas con Metodología Algorítmica usando Python</h3>
+              <p class="diploma-org">SENA</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/SENA- FUNDAMENTOS DE DISEÑO, 2019.webp" alt="SENA Design" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Fundamentos de Diseño" data-en="Design Fundamentals">Fundamentos de Diseño</h3>
+              <p class="diploma-org">SENA</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/SENA-DISEÑO DE VIDEOJUEGOS EN TERCERA PERSONA CON UNITY 2019.webp" alt="SENA Unity" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Diseño de Videojuegos en Tercera Persona con Unity" data-en="Third-Person Game Design with Unity">Diseño de Videojuegos en Tercera Persona con Unity</h3>
+              <p class="diploma-org">SENA</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/SENA-ELABORACION DE ESTRATEGIAS TRANSMEDIA. 2019.webp" alt="SENA Transmedia" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Elaboración de Estrategias Transmedia" data-en="Transmedia Strategy Development">Elaboración de Estrategias Transmedia</h3>
+              <p class="diploma-org">SENA</p>
+            </div>
+          </div>
+
+          <div class="diploma-card">
+            <img src="diplomas/diplomas_imagenes/webp/SENA-ESCULPIDO Y TEXTURIZADO DIGITAL EN PIXOLOGIC ZBRUSH 2019.webp" alt="SENA ZBrush" class="diploma-icon" loading="lazy" />
+            <div class="diploma-info">
+              <h3 class="diploma-title" data-es="Esculpido y Texturizado Digital en ZBrush" data-en="Digital Sculpting and Texturing in ZBrush">Esculpido y Texturizado Digital en ZBrush</h3>
+              <p class="diploma-org">SENA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Brayan Andrés Castillo Mesa / Blackars</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
