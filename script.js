@@ -21,9 +21,9 @@
     const themeToggle = document.getElementById("themeToggle");
     if (!themeToggle) return;
     const theme = root.getAttribute("data-theme");
-    themeToggle.textContent = currentLang === "es"
-      ? (theme === "dark" ? "Modo claro" : "Modo oscuro")
-      : (theme === "dark" ? "Light mode" : "Dark mode");
+    themeToggle.innerHTML = theme === "dark"
+      ? '<span class="theme-icon" aria-hidden="true">&#9790;</span>'
+      : '<span class="theme-icon" aria-hidden="true">&#9728;</span>';
   }
 
   function applyLang(lang) {
@@ -51,7 +51,7 @@
 
   var themeToggle = document.getElementById("themeToggle");
   var savedTheme = localStorage.getItem("blackars-cv-theme");
-  var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
 
   function setTheme(theme) {
     root.setAttribute("data-theme", theme);
@@ -59,7 +59,17 @@
     updateThemeButtonLabel();
   }
 
-  setTheme(savedTheme || (prefersDark ? "dark" : "light"));
+  if (!savedTheme) {
+    setTheme(prefersDark.matches ? "dark" : "light");
+  } else {
+    setTheme(savedTheme);
+  }
+
+  prefersDark.addEventListener("change", function (e) {
+    if (!localStorage.getItem("blackars-cv-theme")) {
+      setTheme(e.matches ? "dark" : "light");
+    }
+  });
 
   themeToggle.addEventListener("click", function () {
     var current = root.getAttribute("data-theme");
