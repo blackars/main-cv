@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <style>
-    text { font-family: Impact, Haettenschweiler, 'Arial Black', sans-serif; font-weight: bold; }
+    text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 300; }
     @media (prefers-color-scheme: light) { text { fill: #070707; } }
     @media (prefers-color-scheme: dark) { text { fill: #f5f5f0; } }
   </style>
